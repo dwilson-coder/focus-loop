@@ -1,0 +1,167 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #f4f4f5;
+  background: #111318;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.app {
+  width: min(100%, 400px);
+  padding-bottom: 12px;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #a3e635;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: 2.5rem;
+}
+
+.subtitle,
+.hint {
+  color: #a1a1aa;
+}
+
+label {
+  display: block;
+  margin: 14px 0 7px;
+  color: #d4d4d8;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #393b44;
+  border-radius: 10px;
+  background: #1d2028;
+  color: #f4f4f5;
+  font: inherit;
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.timer-card {
+  margin: 24px 0 18px;
+  padding: 24px;
+  border: 1px solid #30333c;
+  border-radius: 18px;
+  background: #1a1d24;
+  text-align: center;
+}
+
+#phase {
+  color: #a3e635;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#clock {
+  margin: 8px 0;
+  font-size: 4.5rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+#session-info {
+  min-height: 1.5em;
+  color: #a1a1aa;
+}
+
+.progress-track {
+  height: 6px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #353842;
+}
+
+#progress {
+  width: 0%;
+  height: 100%;
+  background: #a3e635;
+  transition: width 0.3s linear;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #a3e635;
+  color: #17200c;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #30333c;
+  color: #f4f4f5;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.hint {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+.app-footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+  color: #a1a1aa;
+  font-size: 0.8rem;
+}
+
+.app-footer a {
+  color: #a3e635;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}

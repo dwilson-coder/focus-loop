@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#111318"/>
+  <rect x="385" y="55" width="430" height="690" rx="28" fill="#171a21" stroke="#30333c" stroke-width="2"/>
+  <text x="600" y="115" fill="#a3e635" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" text-anchor="middle">POMODORO TIMER</text>
+  <text x="600" y="165" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="44" font-weight="700" text-anchor="middle">Focus Loop</text>
+  <text x="600" y="197" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">One focused session at a time.</text>
+
+  <text x="430" y="250" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="15">What are you working on?</text>
+  <rect x="430" y="265" width="340" height="48" rx="10" fill="#1d2028" stroke="#393b44"/>
+  <text x="448" y="296" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="15">Draft project proposal</text>
+
+  <text x="430" y="350" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="15">Work session</text>
+  <text x="610" y="350" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="15">Repeat</text>
+  <rect x="430" y="365" width="160" height="45" rx="9" fill="#1d2028" stroke="#393b44"/>
+  <rect x="610" y="365" width="160" height="45" rx="9" fill="#1d2028" stroke="#393b44"/>
+  <text x="448" y="394" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="15">25 minutes</text>
+  <text x="628" y="394" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="15">Choose count</text>
+
+  <rect x="430" y="435" width="340" height="190" rx="18" fill="#1a1d24" stroke="#30333c"/>
+  <text x="600" y="472" fill="#a3e635" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">FOCUS</text>
+  <text x="600" y="550" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="76" font-weight="700" text-anchor="middle">25:00</text>
+  <text x="600" y="580" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">Draft project proposal · Session 1 of 4</text>
+  <rect x="455" y="602" width="290" height="6" rx="3" fill="#353842"/>
+  <rect x="455" y="602" width="55" height="6" rx="3" fill="#a3e635"/>
+
+  <rect x="430" y="650" width="160" height="48" rx="10" fill="#a3e635"/>
+  <rect x="600" y="650" width="80" height="48" rx="10" fill="#30333c"/>
+  <rect x="690" y="650" width="80" height="48" rx="10" fill="#30333c"/>
+  <text x="510" y="680" fill="#17200c" font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Start</text>
+  <text x="640" y="680" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">Pause</text>
+  <text x="730" y="680" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">Stop</text>
+</svg>

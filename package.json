@@ -1,0 +1,40 @@
+{
+  "name": "focus-loop",
+  "version": "1.0.0",
+  "description": "A simple Pomodoro focus timer",
+  "main": "main.js",
+  "scripts": {
+    "desktop": "electron .",
+    "web": "electron . --web",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  },
+  "build": {
+    "appId": "com.example.focusloop",
+    "productName": "Focus Loop",
+    "protocols": {
+      "name": "Focus Loop",
+      "schemes": ["focusloop"]
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "styles.css",
+      "renderer.js",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111318" />
+
+  <title>Focus Loop — Pomodoro Timer</title>
+  <meta
+    name="description"
+    content="Focus Loop is a simple Pomodoro timer for focused work sessions and breaks."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Focus Loop — Pomodoro Timer" />
+  <meta
+    property="og:description"
+    content="Focus Loop is a simple Pomodoro timer for focused work sessions and breaks."
+  />
+  <meta property="og:url" content="https://codeboxllc.net/" />
+  <meta property="og:site_name" content="CodeBox" />
+  <meta property="og:image" content="assets/focus-loop-screenshot.svg" />
+  <meta property="og:image:alt" content="Focus Loop Pomodoro timer app" />
+
+  <!-- Social profiles -->
+  <link rel="me" href="https://www.linkedin.com/in/damion-coder-wilson" />
+  <link rel="me" href="https://bsky.app/profile/dwilsoncoder.bsky.social" />
+  <link rel="me" href="https://github.com/dwilson-coder/" />
+
+  <link rel="icon" type="image/png" href="assets/focus-loop-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">POMODORO TIMER</p>
+      <h1>Focus Loop</h1>
+      <p class="subtitle">One focused session at a time.</p>
+    </header>
+
+    <label for="activity">What are you working on?</label>
+    <input id="activity" maxlength="100" placeholder="e.g. Draft project proposal" />
+
+    <div class="settings">
+      <div>
+        <label for="minutes">Work session</label>
+        <select id="minutes">
+          <option value="15">15 minutes</option>
+          <option value="20">20 minutes</option>
+          <option value="25" selected>25 minutes</option>
+        </select>
+      </div>
+      <div>
+        <label for="mode">Repeat</label>
+        <select id="mode">
+          <option value="once">Once</option>
+          <option value="count">Choose count</option>
+          <option value="infinite">Until stopped</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="cycle-setting" class="hidden">
+      <label for="cycles">Number of work sessions</label>
+      <input id="cycles" type="number" min="1" max="99" value="4" />
+    </div>
+
+    <section class="timer-card" aria-live="polite">
+      <p id="phase">Ready</p>
+      <div id="clock">25:00</div>
+      <p id="session-info">Set your activity and start when ready.</p>
+      <div class="progress-track">
+        <div id="progress"></div>
+      </div>
+    </section>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause" class="secondary" disabled>Pause</button>
+      <button id="stop" class="secondary" disabled>Stop</button>
+    </div>
+
+    <p class="hint">Work sessions are 15–25 minutes. Breaks are 5 minutes.</p>
+  </main>
+<footer class="app-footer">
+  <span>© <span id="copyright-year"></span></span>
+  <span>Built by <a href="https://codeboxllc.net/" target="_blank" rel="noopener noreferrer">CodeBox</a></span>
+</footer>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
